@@ -22,7 +22,7 @@ public static boolean oneEditAway(String first, String second) {
 				if (s1.length() == s2.length()) { // On replace, move shorter pointer
 					index1++;
 				}
-			} else {
+			} else { // 合并的内容，需要插入的情况。将待插入的字符串继续向右移动，参与后续比较
 				index1++; // If matching, move shorter pointer 
 			}
 			index2++; // Always move pointer for longer string 
