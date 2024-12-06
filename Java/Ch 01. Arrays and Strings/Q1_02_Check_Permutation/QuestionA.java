@@ -8,7 +8,7 @@ public class QuestionA {
 	}
 	
 	public static boolean permutation(String s, String t) {
-		return sort(s).equals(sort(t));
+		return sort(s).equals(sort(t)); // 相同字符的不同排列排序后相等
 	}	
 	
 	public static void main(String[] args) {
