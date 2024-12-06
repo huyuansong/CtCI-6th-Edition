@@ -17,7 +17,8 @@ public class Example {
 	}
 	
 	public static void main(String[] args) {
-		powersOf2(4);
+		int res = powersOf2(4);
+		System.out.println("res=" + res );
 	}
 
 }
