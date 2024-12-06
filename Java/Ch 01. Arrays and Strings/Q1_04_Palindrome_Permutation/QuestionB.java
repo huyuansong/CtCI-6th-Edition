@@ -2,6 +2,7 @@ package Q1_04_Palindrome_Permutation;
 
 public class QuestionB {	
 
+	// 边遍历边检查
 	public static boolean isPermutationOfPalindrome(String phrase) {
 		int countOdd = 0;
 		int[] table = new int[Character.getNumericValue('z') - Character.getNumericValue('a') + 1];
@@ -9,7 +10,7 @@ public class QuestionB {
 			int x = Common.getCharNumber(c);
 			if (x != -1) {
 				table[x]++;
-
+				// 在每一轮填入新元素进查找表时都统计奇数元素的个数
 				if (table[x] % 2 == 1) {
 					countOdd++;
 				} else {
