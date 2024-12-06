@@ -7,11 +7,11 @@ public class QuestionB {
 		if (str.length() > 26) { // Only 26 characters
 			return false;
 		}
-		int checker = 0;
+		int checker = 0; // 使用整数4*8=32 bit，即可作为查找表使用
 		for (int i = 0; i < str.length(); i++) {
 			int val = str.charAt(i) - 'a';
 			if ((checker & (1 << val)) > 0) return false;
-			checker |= (1 << val);
+			checker |= (1 << val);//累计当前的字符出现情况
 		}
 		return true;
 	}
