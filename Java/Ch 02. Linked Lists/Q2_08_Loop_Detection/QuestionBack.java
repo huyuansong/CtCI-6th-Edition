@@ -38,9 +38,8 @@ public class Question {
         while (slow != fast) { 
             // 同时移动慢指针和快指针，直到它们相遇
             slow = slow.next; 
-            // 慢指针向前移动一个节点
             fast = fast.next; 
-            // 快指针向前移动一个节点
+        
         }
         
         // Both now point to the start of the loop.
