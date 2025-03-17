@@ -20,7 +20,7 @@ public class QuestionBack {
 		index = trueLength + spaceCount * 2;
 
 		// 如果原始字符串的实际长度小于提供的数组长度，则在trueLength位置放置终止符'\0'
-		if (trueLength < str.length) str[trueLength] = '\0';
+		//if (trueLength < str.length) str[trueLength] = '\0'; // C 语言风格，不需要这段
 
 		// 从字符串的末尾开始向前遍历，逐步处理每个字符。同一个数组，两组不同逻辑的索引 i, index
 		for (i = trueLength - 1; i >= 0; i--) {
@@ -49,7 +49,47 @@ public class QuestionBack {
 		}
 		return -1;
 	}
-	
+
+
+	/* // 1. 先统计空格，计算调整后的长度。 2. 从后往前处理每个字符
+
+	public static void replaceSpaces(char[] str, int trueLength)	{
+		
+		int spaceCount = 0;		
+
+		// count the num of space
+		for(int i = 0; i < trueLength; i ++ ) {
+			if (str[i] == ' ' ) spaceCount++;
+		}
+		
+		int index = trueLength + spaceCount * 2;
+
+		for (int i = trueLength - 1; i >= 0; i-- ) {
+			if ( str[i] == ' ' ) {
+				str[index-1] = '0';
+				str[index-2] = '2';
+				str[index-3] = '%';
+
+				index = index - 3;
+			}else {
+				str[index-1] = str[i];
+				index--;
+			}
+
+		}
+		
+	}
+
+
+
+	// 0. 返回末尾不是空格的第一个字符的索引
+	public static int findLastCharacter(char[] str) {
+		for (int i = str.length-1; i >=0; i-- ) {
+			if (str[i] != ' ' ) return i;
+		}
+		return -1;
+	} */
+
 	public static void main(String[] args) {
 		String str = "Mr John Smith    ";
 		char[] arr = str.toCharArray();

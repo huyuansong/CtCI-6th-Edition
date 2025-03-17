@@ -23,8 +23,9 @@ public class QuestionB {
         return true; // letters array has no negative values, and therefore no positive values either
     }
 
+
     public static void main(String[] args) {
-        String[][] pairs = {{"apple", "paelb"}};
+        String[][] pairs = {{"apple", "ppela"}};
         for (String[] pair : pairs) {
             String word1 = pair[0];
             String word2 = pair[1];

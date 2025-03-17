@@ -1,7 +1,9 @@
 package Q1_04_Palindrome_Permutation;
 
-public class QuestionA {	
-	public static boolean checkMaxOneOdd(int[] table) {
+import org.junit.Test;
+
+public class QuestionA {
+	 public static boolean checkMaxOneOdd(int[] table) {
 		boolean foundOdd = false;
 		for (int count : table) {
 			if (count % 2 == 1) {
@@ -23,6 +25,16 @@ public class QuestionA {
 		String pali = "Rats live on no evil star";
 		System.out.println(isPermutationOfPalindrome(pali));
 	}
+
+	@Test
+	public void test() {
+		int num = Character.getNumericValue(' ');
+		System.out.println(num);
+
+	}
+
+
+
 
 
 }
