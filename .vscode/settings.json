@@ -1,0 +1,25 @@
+{
+    "java.project.sourcePaths": [
+        "Java/Introduction",
+        "Java/Big O",
+        "Java/Ch 01. Arrays and Strings",
+        "Java/Ch 02. Linked Lists",
+        "Java/Ch 03. Stacks and Queues",
+        "Java/Ch 04. Trees and Graphs",
+        "Java/Ch 05. Bit Manipulation",
+        "Java/Ch 06. Math and Logic Puzzles",
+        "Java/Ch 07. Object-Oriented Design",
+        "Java/Ch 08. Recursion and Dynamic Programming",
+        "Java/Ch 09. Scalability and Memory Limits",
+        "Java/Ch 10. Sorting and Searching",
+        "Java/Ch 13. Java",
+        "Java/Ch 16. Moderate",
+        "Java/Ch 15. Threads and Locks",
+        "Java/Ch 17. Hard",
+        "Java/CtCILibrary"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "Java/lib/**/*.jar"
+    ]
+}
