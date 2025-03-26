@@ -2,3 +2,7 @@ bin/
 lib/
 Java/lib/
 Groovy
+Groovy/
+.gitignore
+/Groovy/
+Java/.DS_Store
