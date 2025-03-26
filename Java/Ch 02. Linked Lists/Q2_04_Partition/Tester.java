@@ -19,7 +19,7 @@ public class Tester {
 		System.out.println(createLinkedList().printForward());
 		
 		/* Partition */
-		LinkedListNode hA = Question.partition(createLinkedList(), 5);
+		LinkedListNode hA = QuestionA.partition(createLinkedList(), 5);
 		LinkedListNode hB = QuestionB.partition(createLinkedList(), 5);
 		LinkedListNode hC = QuestionC.partition(createLinkedList(), 5);
 		
