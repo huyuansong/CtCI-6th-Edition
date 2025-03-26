@@ -1,3 +1,6 @@
+package Q1_06_String_Compression;
+
+public class QuestionBBack {
 /**
  * 将字符串进行压缩。压缩方式为：将连续相同的字符替换为该字符和其出现的次数。
  * 如果压缩后的字符串长度不小于原始字符串，则返回原始字符串。
@@ -30,4 +33,7 @@ public static String compressBad(String str) {
     
     // 如果压缩后的字符串长度小于原字符串，则返回压缩后的字符串；否则返回原字符串
     return compressedString.length() < str.length() ? compressedString : str;
+}
+
+
 }
