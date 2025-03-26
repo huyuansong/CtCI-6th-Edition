@@ -6,7 +6,8 @@ public class QuestionC {
 		if (index < 0) return bitVector;
 		
 		int mask = 1 << index;
-		if ((bitVector & mask) == 0) {
+		// 判断是否为 0，如果是，则翻转为 1，否则翻转为 0
+		if ((bitVector & mask) == 0) { 
 			bitVector |= mask; // toggle 0 to 1
 		} else {
 			bitVector &= ~mask; // toggle 1 to 0

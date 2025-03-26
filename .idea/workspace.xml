@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2e5b17a9-a306-4e2a-9e4a-cb46dcc395ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Java/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/Ch 01. Arrays and Strings/Q1_01_Is_Unique/QuestionA.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/Ch 01. Arrays and Strings/Q1_01_Is_Unique/QuestionA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/Ch 01. Arrays and Strings/Q1_02_Check_Permutation/QuestionB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/Ch 01. Arrays and Strings/Q1_02_Check_Permutation/QuestionB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/Ch 01. Arrays and Strings/Q1_04_Palindrome_Permutation/QuestionCBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/Ch 01. Arrays and Strings/Q1_04_Palindrome_Permutation/QuestionCBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/Ch 01. Arrays and Strings/Q1_04_Palindrome_Permutation/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/Ch 01. Arrays and Strings/Q1_04_Palindrome_Permutation/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/Ch 02. Linked Lists/Q2_02_Return_Kth_To_Last/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/Ch 02. Linked Lists/Q2_02_Return_Kth_To_Last/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/Ch 17. Hard/Q17_22_Word_Transformer/QuestionA.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/Ch 17. Hard/Q17_22_Word_Transformer/QuestionA.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2uS0wzoLOyAER65xgG0WZAYUA3U" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2e5b17a9-a306-4e2a-9e4a-cb46dcc395ec" name="Changes" comment="" />
+      <created>1742226910859</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742226910859</updated>
+      <workItem from="1742226918882" duration="35000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

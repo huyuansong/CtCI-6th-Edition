@@ -1,6 +1,5 @@
 package Q1_04_Palindrome_Permutation;
 
-import org.junit.Test;
 
 public class Tester {
 

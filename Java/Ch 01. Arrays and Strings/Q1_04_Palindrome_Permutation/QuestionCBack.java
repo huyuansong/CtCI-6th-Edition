@@ -1,6 +1,5 @@
 package Q1_04_Palindrome_Permutation;
 
-import org.junit.Test;
 
 public class QuestionCBack {
 	/* Toggle the ith bit in the integer. */

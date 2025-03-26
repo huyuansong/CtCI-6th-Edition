@@ -7,7 +7,7 @@ public class QuestionA {
 		boolean foundOdd = false;
 		for (int count : table) {
 			if (count % 2 == 1) {
-				if (foundOdd) {
+				if (foundOdd) { // 先检查（本轮发现一个奇数，之前已经有一个奇数，则退出），否则再做本轮设置
 					return false;
 				}
 				foundOdd = true;

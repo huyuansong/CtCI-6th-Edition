@@ -1,8 +1,6 @@
 package Q1_01_Is_Unique;
 
-import org.junit.Test;
 
-import java.util.Arrays;
 
 public class QuestionA {
 	public static boolean isUniqueChars(String str) {

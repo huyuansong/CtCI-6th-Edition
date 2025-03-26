@@ -3,16 +3,12 @@ package Q17_22_Word_Transformer;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.Map;
-import java.util.Queue;
 import java.util.Set;
-import java.util.TreeMap;
-import java.util.TreeSet;
 
 public class QuestionA {
 
 	public static ArrayList<String> wordsOneAway(String word) {
-		ArrayList<String> words = new ArrayList<String>();
+		ArrayList<String> words = new ArrayList<>();
 		for (int i = 0; i < word.length(); i++) {
 			for (char c = 'a'; c <= 'z'; c++) {
 				String w = word.substring(0, i) + c + word.substring(i + 1);
@@ -24,7 +20,7 @@ public class QuestionA {
 	
 	public static LinkedList<String> transform(HashSet<String> visited, String startWord, String stopWord, Set<String> dictionary) {
 		if (startWord.equals(stopWord)) {
-			LinkedList<String> path = new LinkedList<String>();
+			LinkedList<String> path = new LinkedList<>();
 			path.add(startWord);
 			return path;
 		} else if (visited.contains(startWord) || !dictionary.contains(startWord)) {
@@ -47,12 +43,12 @@ public class QuestionA {
 
 	public static LinkedList<String> transform(String start, String stop, String[] words) {
 		HashSet<String> dict = setupDictionary(words);
-		HashSet<String> visited = new HashSet<String>();
+		HashSet<String> visited = new HashSet<>();
 		return transform(visited, start, stop, dict);
 	}
 	
 	public static HashSet<String> setupDictionary(String[] words) {
-		HashSet<String> hash = new HashSet<String>();
+		HashSet<String> hash = new HashSet<>();
 		for (String word : words) {
 			hash.add(word.toLowerCase());
 		}
