@@ -60,28 +60,36 @@ public class QuestionBack {
     }
 
     /**
-     * 使用插入排序对栈进行排序。
+     *  使用插入排序对栈进行排序。
      *
-     * @param s 待排序的栈
+     *  通过将 s 中的每个元素按顺序插入r 来对 s 进行排序。
+     * @param s 待排序的整数栈。函数会直接修改该栈的内容，使其变为升序排列。
      */
-    public static void sort(Stack<Integer> s) {
-        Stack<Integer> r = new Stack<Integer>(); // 创建一个辅助栈 r，用于存储排序后的元素。
-
-        while (!s.isEmpty()) { // 当原栈 s 不为空时，依次处理每个元素。
-            int tmp = s.pop(); // 弹出原栈 s 的栈顶元素。
-
-            // 将辅助栈 r 中大于当前元素的所有元素重新压回原栈 s。
-            while (!r.isEmpty() && r.peek() > tmp) {
+    public static void sort(Stack<Integer> s){
+        // 创建一个辅助栈 r，用于临时存储数据以完成排序。
+        Stack<Integer> r = new Stack<Integer>();
+        
+        // 依次对s中的元素执行排序
+        while(!s.isEmpty()){
+            // 从主栈 s 弹出待排序的元素，暂存为 temp。
+            int temp = s.pop();
+           
+            // 将辅助栈 r 中所有大于当前待排序元素temp大小的元素重新压回主栈 s，此时s充当缓冲区功能，确保 r 目前是排序的状态
+            while(!r.isEmpty() && r.peek() > temp){
                 s.push(r.pop());
             }
-
-            // 将当前元素压入辅助栈 r，保持 r 中的元素按升序排列。
-            r.push(tmp);
+            
+            // 将 temp 压入辅助栈 r，此时完成了对temp元素的排序
+            r.push(temp);
         }
-
-        // 将辅助栈 r 中的元素依次压回原栈 s，完成排序。
-        while (!r.isEmpty()) {
+        
+        // 将辅助栈 r 中的所有元素重新压回主栈 s，此时 s 已经是升序排列。
+        while(!r.isEmpty()){
             s.push(r.pop());
+        }
+        // 打印排序后的结果
+        while (!s.isEmpty()) {
+            System.out.print(s.pop()+ "  ");
         }
     }
 
