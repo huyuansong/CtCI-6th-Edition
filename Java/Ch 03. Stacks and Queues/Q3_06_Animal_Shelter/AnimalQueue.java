@@ -16,25 +16,27 @@ public class AnimalQueue {
 			cats.addLast((Cat)a);
 		}
 	}
-	
+	// 移除并返回最老的动物
 	public Animal dequeueAny() {
 		if (dogs.size() == 0) {
 			return dequeueCats();
 		} else if (cats.size() == 0) {
 			return dequeueDogs();
 		}
+		// 在这里偷看哪个时间比较旧 ，返回更老的
 		Dog dog = dogs.peek();
-		Cat cat = cats.peek();
+		Cat cat = cats.peek(); // Retrieves, but does not remove, the head (first element) of this list.
 		if (dog.isOlderThan(cat)) {
-			return dogs.poll();
+			return dogs.poll(); // Retrieves and removes the head (first element) of this list.
 		} else {
 			return cats.poll();
 		}
 	}
 	
+	// 仅返回最老的动物，不移除它。
 	public Animal peek() {
 		if (dogs.size() == 0) {
-			return cats.peek();
+			return cats.peek(); 
 		} else if (cats.size() == 0) {
 			return dogs.peek();
 		}
