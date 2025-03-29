@@ -40,13 +40,15 @@ public class Question {
 	}
 
     public static boolean search(Graph g,Node start,Node end) {  
-        LinkedList<Node> q = new LinkedList<Node>();
+        LinkedList<Node> q = new LinkedList<Node>(); // 队列:在广度遍历图时候的辅助结构
         for (Node u : g.getNodes()) {
             u.state = State.Unvisited;
         }
         start.state = State.Visiting;
         q.add(start);
         Node u;
+		// 通用框架结构
+		// 广度遍历的标准写法，无论是树还是图，都是类似的使用队列作为记录，遍历的框架结构
         while(!q.isEmpty()) {
             u = q.removeFirst();
             if (u != null) {
