@@ -5,7 +5,9 @@ import CtCILibrary.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
-
+/**
+ * 给二叉树的每一层节点创建一个链表
+ */
 public class QuestionBFS {
 
     /*
@@ -21,13 +23,13 @@ public class QuestionBFS {
             current.add(root); // 将根节点添加到当前层链表
         }
 
-        /* 使用广度优先搜索（BFS）遍历二叉树 */
+        /* 使用广度优先搜索（BFS）遍历二叉树, 在遍历过程中做记录，达到相关的应用目的 */
         while (current.size() > 0) { // 当前层链表不为空时继续
             result.add(current); // 将当前层链表添加到结果列表中
             LinkedList<TreeNode> parents = current; // 当前层作为父节点层
             current = new LinkedList<TreeNode>(); // 创建新的链表用于存储下一层节点
 
-            /* 遍历当前层的所有节点 */
+            /* 遍历当前层的所有节点（父节点的所有孩子） */
             for (TreeNode parent : parents) {
                 /* 访问当前节点的子节点 */
                 if (parent.left != null) { // 如果左子节点存在
